@@ -1,0 +1,61 @@
+{
+  "name": "Guide",
+  "plural": "Guides",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "PreparationDesc": {
+      "type": "string",
+      "required": true
+    },
+    "backgroundPhoto": {
+      "type": "string",
+      "required": true
+    },
+    "SupplyKitDesc": {
+      "type": "string",
+      "required": true
+    },
+    "SupplyKitList": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "FamilyPlanDesc": {
+      "type": "string",
+      "required": true
+    },
+    "SurvivalTipsList": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "KnowledgeOfDisasterDesc": {
+      "type": "string",
+      "required": true
+    },
+    "OrganizedPlanList": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
