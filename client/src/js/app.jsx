@@ -5,6 +5,7 @@ import Navigation from './containers/Navigation';
 import homePage from './containers/homePage';
 import { connect } from 'react-redux';
 import guidePage from './containers/guidePage';
+import disasterPlan from './containers/disasterPlan';
  class App extends Component {
     constructor(props){
         super(props)
@@ -21,6 +22,7 @@ import guidePage from './containers/guidePage';
                         <Switch>
                             <Route exact path="/" component={ homePage } />
                             <Route path = "/guide/:id" component={guidePage} />
+                            <Route path="/plan" component={disasterPlan} />
                         </Switch>
                     </div>
                 </div>

@@ -16,7 +16,8 @@ export default class Navigation extends React.Component {
         const {dispatch} = this.props,
             PreviousState = sessionStorage.getItem('state');
             
-        if (!PreviousState || !PreviousState.location && !PreviousState.city ) {
+        if (!PreviousState  ) {
+            console.log('get location')
              dispatch(getLocation());
         }
         if (!PreviousState ||!PreviousState.guides) {
@@ -50,7 +51,7 @@ export default class Navigation extends React.Component {
                                 <ul id="nav-mobile-right" className="right  hide-on-med-and-down">
                                         <span id="location"> LOCATION,  </span>
                                         
-                                        <span id='cityLocation'>  {city}, {state} </span> <i className="fas fa-1x fa-map-marker-alt"></i>
+                                        <span id='cityLocation'>  Pasadena, CA{city}, {state} </span> <i className="fas fa-1x fa-map-marker-alt"></i>
                                 </ul>
                             </div>
                             
@@ -62,7 +63,7 @@ export default class Navigation extends React.Component {
                         <a href="/">Home</a>
                         <a href="/about">About Us</a>
                         <a href="/">Guides</a>
-                        <a href="/newplan"> Disaster Prepper</a>
+                        <a href="/plan"> Create Disaster Plan</a>
                     </div>
             </div>
         )

@@ -16,6 +16,10 @@ html {
   font-family: 'Hind';
   background-color: var(--background-white);
 }
+.background-green {
+  background-color: var(--main-green);
+  font-weight: bold;
+}
 .main-red {
   color: var(--main-red);
   font-weight: bold;
@@ -137,6 +141,10 @@ nav {
 }
 .guidePage {
   background-color: var(--main-red);
+  height: 100%;
+}
+.disasterPlan {
+  background-color: #40739e;
   height: 100%;
 }
 i.left {

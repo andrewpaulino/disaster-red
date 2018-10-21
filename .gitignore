@@ -20,3 +20,4 @@ npm-debug.log
 bundle.js
 server/datasources.json
 .env
+datasources.json
