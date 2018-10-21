@@ -111,7 +111,7 @@ export default class homePage extends React.Component {
                                     <div className="card-action">
                                     <div className="row">
                                         <div className="col s12 right-align vertical-align ">
-                                            <a class="waves-effect waves-light map-btn btn-large center">START PLAN    <i className="right large material-icons">arrow_forward</i></a>
+                                            <a href='/plan' class="waves-effect waves-light map-btn btn-large center">START PLAN    <i className="right large material-icons">arrow_forward</i></a>
                                         </div>
                                     </div>
                                     </div>
@@ -120,11 +120,6 @@ export default class homePage extends React.Component {
                             </div>
                         </div>
                         
-                    </div>
-                    <div className="row">
-                        <div className="col s12">
-                        test
-                        </div>
                     </div>
                 </div>
             </div>

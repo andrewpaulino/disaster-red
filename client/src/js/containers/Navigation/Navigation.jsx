@@ -16,7 +16,8 @@ export default class Navigation extends React.Component {
         const {dispatch} = this.props,
             PreviousState = sessionStorage.getItem('state');
             
-        if (!PreviousState || !PreviousState.location && !PreviousState.city ) {
+        if (!PreviousState  ) {
+            console.log('get location')
              dispatch(getLocation());
         }
         if (!PreviousState ||!PreviousState.guides) {
@@ -62,7 +63,7 @@ export default class Navigation extends React.Component {
                         <a href="/">Home</a>
                         <a href="/about">About Us</a>
                         <a href="/">Guides</a>
-                        <a href="/newplan"> Disaster Prepper</a>
+                        <a href="/plan"> Create Disaster Plan</a>
                     </div>
             </div>
         )

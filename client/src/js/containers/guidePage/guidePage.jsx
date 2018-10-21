@@ -82,7 +82,7 @@ export default class guidePage extends React.Component {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col s12"><img src="https://s3-us-west-1.amazonaws.com/disaster-red/EarthquakesBackground.jpeg" alt=""/></div>
+                                    <div className="col s12"><img src={selectedGuide.backgroundPhoto} alt=""/></div>
                                 </div>
                                 <div className="row ">
                                     <div className="col s12 border-dashed">
@@ -131,6 +131,9 @@ export default class guidePage extends React.Component {
                                             })}
                                           
                                            
+                                        </div>
+                                        <div className="row">
+                                            <div className="col s12"><img src={selectedGuide.pictureTwo} alt=""/></div>
                                         </div>
                                         <div className="col s12 border-dashed">
                                             <div className="article-subheader border-bottom">

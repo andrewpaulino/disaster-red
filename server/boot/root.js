@@ -15,6 +15,10 @@ module.exports = function(server) {
     const indexFile = path.resolve(__dirname, '../../client/public/index.html');
     res.sendFile(indexFile);
   });
+  router.get('/plan', function(req, res) {
+    const indexFile = path.resolve(__dirname, '../../client/public/index.html');
+    res.sendFile(indexFile);
+  });
   router.get('/api/bundle.js', (req,res) => {
     const jsFile = path.resolve(__dirname, '../../client/dist/bundle.js');
     res.sendFile(jsFile)
@@ -24,8 +28,9 @@ module.exports = function(server) {
     res.sendFile(jsFile)
   })
   router.get('/api/location', (req, res) => {
-    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${req.query.lat},${req.query.long}&key=${process.env.googleAPI}`)
+    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${req.query.lat},${req.query.long}&key=${process.env.google}`)
     .then(response => {
+      console.log(response)
       const city = response.data.results[0].address_components[3].long_name,
         state = response.data.results[0].address_components[5].short_name;
 
