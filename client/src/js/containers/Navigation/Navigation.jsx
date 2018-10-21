@@ -51,7 +51,7 @@ export default class Navigation extends React.Component {
                                 <ul id="nav-mobile-right" className="right  hide-on-med-and-down">
                                         <span id="location"> LOCATION,  </span>
                                         
-                                        <span id='cityLocation'>  {city}, {state} </span> <i className="fas fa-1x fa-map-marker-alt"></i>
+                                        <span id='cityLocation'>  Pasadena, CA{city}, {state} </span> <i className="fas fa-1x fa-map-marker-alt"></i>
                                 </ul>
                             </div>
                             
